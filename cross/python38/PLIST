@@ -7,7 +7,7 @@ bin:bin/pydoc@PKG_SHORT_VERS@
 lnk:bin/python3
 bin:bin/python@PKG_SHORT_VERS@
 rsc:etc/mime.types
-rsc:include/python@PKG_SHORT_VERS@m/pyconfig.h
+rsc:include/python@PKG_SHORT_VERS@/pyconfig.h
 lnk:lib/libpython@PKG_SHORT_VERS@.so
 lib:lib/libpython@PKG_SHORT_VERS@.so.1.0
 lib:lib/libpython3.so
