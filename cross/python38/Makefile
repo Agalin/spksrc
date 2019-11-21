@@ -42,6 +42,8 @@ PYTHON_LIB_CROSS = $(WORK_DIR)/$(PKG_DIR)/build/lib.linux-$(BUILD_ARCH)-$(PKG_VE
 PYTHON_LIB_DIR = lib/python$(PKG_VERS_MAJOR).$(PKG_VERS_MINOR)
 PYTHON_INC_DIR = include/python$(PKG_VERS_MAJOR).$(PKG_VERS_MINOR)
 
+PATH := $(PATH):$(WORK_DIR)/../../../native/$(PKG_NAME)/work-native/install/usr/local/bin/
+
 .PHONY: python3_post_patch
 python3_post_patch:
 	$(RUN) sed -e 's#@INSTALL_PREFIX@#$(INSTALL_PREFIX)#' -i Lib/mimetypes.py
